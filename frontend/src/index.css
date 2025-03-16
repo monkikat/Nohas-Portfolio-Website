@@ -24,7 +24,7 @@ body {
     --color-blackCustom-900: #2e3038;
     --color-blackCustom-950: #25262c;
 
-    --animate-moveDiagonally: diagonalPath 5s linear forwards
+    --animate-moveDiagonally: diagonalPath 5s linear infinite
 }
 
 @keyframes diagonalPath {
