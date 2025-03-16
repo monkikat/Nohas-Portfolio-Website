@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const NavBar = () => {
     return (
       <header className="fixed flex w-full p-2 md:p-4 text-xs md:text-sm">
@@ -18,31 +20,25 @@ const NavBar = () => {
           <div className="md:flex basis-3/7 justify-between">
               <div className="flex list-none space-x-2 justify-end space-y-2">
                   <li>
-                      <p>Home</p>
+                      <Link to='/'>Home</Link>
                   </li>
                   <li>
                       <p>|</p>
                   </li>
                   <li>
-                      <p>About</p>
+                      <Link to='/projects'>Projects</Link>
                   </li>
                   <li>
                       <p>|</p>
                   </li>
                   <li>
-                      <p>Projects</p>
+                      <Link to='/'>Skills</Link>
                   </li>
                   <li>
                       <p>|</p>
                   </li>
                   <li>
-                      <p>Skills</p>
-                  </li>
-                  <li>
-                      <p>|</p>
-                  </li>
-                  <li>
-                      <p>Contact</p>
+                      <Link to='/'>Contact Me</Link>
                   </li>
               </div>
               <div className="flex justify-end">

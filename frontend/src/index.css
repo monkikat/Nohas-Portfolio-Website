@@ -10,3 +10,25 @@ body {
     background-color: #dde5e8;
     color: #2e3038;
 }
+
+@theme {
+    --color-blackCustom-50: #f7f8f8;
+    --color-blackCustom-100: #ededf1;
+    --color-blackCustom-200: #d7d9e0;
+    --color-blackCustom-300: #b5b9c4;
+    --color-blackCustom-400: #8c93a4;
+    --color-blackCustom-500: #6e7589;
+    --color-blackCustom-600: #585d71;
+    --color-blackCustom-700: #484c5c;
+    --color-blackCustom-800: #3e414e;
+    --color-blackCustom-900: #2e3038;
+    --color-blackCustom-950: #25262c;
+
+    --animate-moveDiagonally: diagonalPath 5s linear forwards
+}
+
+@keyframes diagonalPath {
+    0% { transform: translateX(-200%) translateY(100)}
+    100% { transform: translateX(200%) translateY(-250%) }
+}
+
