@@ -1,9 +1,9 @@
-import ProjectComponent from "../components/ProjectComponent"
+import ProjectComponent1 from "../components/ProjectComponent1"
 
 const ProjectsPage = () => {
   return (
-    <div className="h-fit w-full p-2 md:p-4 pt-36 md:pt-48">
-        <ProjectComponent/>
+    <div className="w-full pt-36 md:pt-48 bg-yellowCustom-100">
+      <ProjectComponent1/>
     </div>
   )
 }

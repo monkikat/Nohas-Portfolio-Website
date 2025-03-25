@@ -24,11 +24,9 @@ body {
     --color-blackCustom-900: #2e3038;
     --color-blackCustom-950: #25262c;
 
-    --animate-moveDiagonally: diagonalPath 5s linear infinite
-}
+    --color-yellowCustom-50: #fdf8ed;
+    --color-yellowCustom-100: #f7ebce;
 
-@keyframes diagonalPath {
-    0% { transform: translateX(-200%) translateY(100)}
-    100% { transform: translateX(200%) translateY(-250%) }
+    --color-blueCustom-100: #dde5e8
 }
 

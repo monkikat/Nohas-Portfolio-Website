@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const NavBar = () => {
     return (
-      <header className="fixed flex w-full p-2 md:p-4 text-xs md:text-sm">
+      <header className="fixed flex w-full p-2 md:p-4 text-xs md:text-sm z-30">
           <div className="flex-row md:flex basis-3/7 justify-between space-y-2 md:space-x-4">
               <div>
                   <p>Noha Haneen</p>
