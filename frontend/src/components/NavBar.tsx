@@ -18,7 +18,7 @@ const NavBar = () => {
           <div className="flex basis-1/7">
           </div>
           <div className="md:flex basis-3/7 justify-between">
-              <div className="flex list-none space-x-2 justify-end space-y-2">
+              <div className="flex list-none space-x-4 justify-end items-center">
                   <li>
                       <Link to='/'>Home</Link>
                   </li>
@@ -41,8 +41,10 @@ const NavBar = () => {
                       <Link to='/'>Contact Me</Link>
                   </li>
               </div>
-              <div className="flex justify-end">
-                  <p>Theme</p>
+              <div className="flex items-start">
+                  <button className="border-2 border-brownCustom-100 bg-pinkCustom-50 p-1.5 rounded-2xl hover:bg-lemoncustom-50">
+                    Theme
+                  </button>
               </div>
           </div>
           

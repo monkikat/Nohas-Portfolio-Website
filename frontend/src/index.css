@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gidole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
 @import "tailwindcss";
 
 * {
@@ -6,9 +9,11 @@
   }
 
 body {
-    font-family: 'Inria Serif', serif;
-    background-color: #dde5e8;
-    color: #2e3038;
+    /* font-family: 'Inria Serif', serif; */
+    font-family: "Gidole", sans-serif; 
+    background-color: #f3f3f3;
+    /* color: #633b32; */
+    color: #6d4884;
 }
 
 @theme {
@@ -27,6 +32,26 @@ body {
     --color-yellowCustom-50: #fdf8ed;
     --color-yellowCustom-100: #f7ebce;
 
-    --color-blueCustom-100: #dde5e8
+    --color-lemoncustom-100: #faeea1;
+    --color-lemoncustom-50: #fbf6c6;
+
+    --color-pinkCustom-50: #eec9be;
+    --color-blueCustom-100: #9cedee;
+    --color-brownCustom-100: #51312b;
+
+    --color-salmoncustom-100: #feabbf;
+    --color-blueCustom-200: #062872;
+    --color-purpleCustom-50: #eee8ff;
+    --color-purpleCustom-100: #eacdfb;
+    --color-purpleCustom-200: #a39cd9;
+    --color-purpleCustom-500: #3f4d9c;
+    --color-creamCustom-100: #f6e7cf;
+
+    --color-indigoCustom-400: #6d4884;
+    --color-concreteCustom-100: #f3f3f3;
+
+    --font-pixelify: "Pixelify Sans", sans-serif;
+    --font-regular: "Gidole", sans-serif;
+    --font-titleCustomFont: "Boldonse", system-ui;
 }
 
