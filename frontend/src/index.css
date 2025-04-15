@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pixelify+Sans:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gidole&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
 @import "tailwindcss";
 
 * {
@@ -9,10 +12,8 @@
   }
 
 body {
-    /* font-family: 'Inria Serif', serif; */
     font-family: "Gidole", sans-serif; 
     background-color: #f3f3f3;
-    /* color: #633b32; */
     color: #6d4884;
 }
 
@@ -48,10 +49,14 @@ body {
     --color-creamCustom-100: #f6e7cf;
 
     --color-indigoCustom-400: #6d4884;
+    --color-indigoCustom-100: #d5c3e4;
+    --color-indigoCustom-200: #bd9fd3;
+    --color-indigoCustom-300: #8359a0;
     --color-concreteCustom-100: #f3f3f3;
 
-    --font-pixelify: "Pixelify Sans", sans-serif;
     --font-regular: "Gidole", sans-serif;
     --font-titleCustomFont: "Boldonse", system-ui;
+    --font-customTitle: "Fredericka the Great", serif;
+    --font-customTitle2: "DM Serif Text", serif;
 }
 

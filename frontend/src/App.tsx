@@ -1,35 +1,43 @@
 import { Route, Routes } from "react-router-dom"
-import LandingPage from "./pages/LandingPage"
 import ProjectsPage from "./pages/ProjectsPage"
-import Footer from "./components/Footer"
-import Testyyy from "./components/ProjectSection"
-import TestLandingPage from "./pages/LandingPage"
-import TestNavbar from "./components/TestNavbar"
 import HomePage from "./pages/HomePage"
-
-/*
-
-<div className="">
-      <NavBar/>
-      <Routes>
-        <Route index element = {<LandingPage/>} />
-        <Route path='/' element = {<LandingPage/>} />
-        <Route path='/projects' element = {<ProjectsPage/>} />
-      </Routes>
-      <Footer/>
-    </div>
-
-*/
+import TestNavbar from "./components/TestNavbar"
+import { motion, useAnimation, useScroll, useTransform } from "motion/react"
+import { useEffect, useRef } from "react"
+import SkillsPage from "./pages/SkillsPage"
+import Footer from "./components/Footer"
+import { ScrollProvider } from "./components/NavScrollContext"
 
 function App() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const animator = useAnimation();
+
+  const {scrollYProgress} = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"]
+  });
+
+  const navTextColor = useTransform(scrollYProgress, [0, 0.3, 0.32, 1], ["#f3f3f3", "#f3f3f3", "#6d4884", "#6d4884"]);
+  const navTextOpacity = useTransform(scrollYProgress, [0, 0.16, 0.18, 0.97, 0.98, 1], [0, 0, 1, 1, 0, 0]);
 
   return (
-    <div>
-      <Routes>
-        <Route index element = {<HomePage/>} />
-        <Route path='/' element = {<HomePage/>} />
-        <Route path='/projects' element = {<ProjectsPage/>} />
-      </Routes>
+    <div ref={containerRef}>
+      <ScrollProvider>
+        <motion.div className="w-full fixed z-50"
+        style={{
+          color: navTextColor,
+          opacity: navTextOpacity
+        }}>
+          <TestNavbar/>
+        </motion.div>
+        <Routes>
+          <Route index element = {<HomePage/>} />
+          <Route path='/' element = {<HomePage/>} />
+          <Route path='/projects' element = {<ProjectsPage/>} />
+          <Route path='/skills' element = {<SkillsPage/>} />
+        </Routes>
+        <Footer/>
+      </ScrollProvider>
     </div>
   )
 }

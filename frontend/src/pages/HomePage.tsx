@@ -1,15 +1,24 @@
-import TestIntroPage from "./IntroPage"
-import TestLandingPage from "./LandingPage"
+import { useEffect, useRef } from "react"
+import { useScrollCustom } from "../components/NavScrollContext"
+import ContactPage from "./ContactPage"
+import LandingPage from "./LandingPage"
 import ProjectsPage from "./ProjectsPage"
+import SkillsPage from "./SkillsPage"
 
 const HomePage = () => {
-  return (
-    <div className="w-full">
-        <TestLandingPage/>
-        <ProjectsPage/>
-        <div className="h-[100vh]">
+  const homeSectionRef = useRef<HTMLDivElement>(null);
+  const { registerSection } = useScrollCustom();
 
-        </div>
+  useEffect(() => {
+      registerSection("home", homeSectionRef);
+  }, []);
+    
+  return (
+    <div ref={homeSectionRef} className="w-full">
+        <LandingPage/>
+        <ProjectsPage/>
+        <SkillsPage/>
+        <ContactPage/>
     </div>
   )
 }
