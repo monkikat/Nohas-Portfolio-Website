@@ -1,31 +1,20 @@
 import PixPortraitCard from "../components/PixPortraitCard"
-import ProPicCard from "../components/ProPicCard"
-
-import proPic from "../assets/profilePic.jpg";
 import cloud1 from "../assets/cloud1.svg";
 import cloud2 from "../assets/cloud2.svg";
 import PixIntroPage from "./PixIntroPage";
 import { motion, useAnimation, useAnimationControls, useMotionValue, useScroll, useSpring, useTransform, useVelocity } from "motion/react";
 import { useEffect, useRef } from "react";
-import { easeIn } from "motion";
 
 
 const PixLandingPage = () => {
     const ref = useRef<HTMLDivElement>(null);
     const opacityAnimator = useAnimation();
     const controls1 = useAnimationControls();
-    const controls2 = useAnimationControls();
-    const controls3 = useAnimationControls();
-    
+    const controls2 = useAnimationControls();    
 
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["start end", "end start"]
-    });
-
-    const { scrollYProgress : scrollYProgressBg } = useScroll({
-        target: ref,
-        offset: ["end end", "end start"]
     });
 
     const yintroCrd = useTransform(scrollYProgress, [0, 0.7, 1], [0, 0, -100]);

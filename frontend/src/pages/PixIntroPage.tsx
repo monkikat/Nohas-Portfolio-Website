@@ -1,5 +1,3 @@
-import React from 'react'
-
 const introText1 = `Hi, I’m Noha — a freelance web developer and designer based in Houston.`
 const introText2 = `I love bringing creativity to life through clean, responsive, and visually engaging websites. Creativity is what drives me, whether I’m designing a landing page, building out interactive components, or just sketching new UI ideas.`
 const introText3 = `I have created and integrated REST APIs, built out full-stack features, and handled backend tasks like form handling, data storage, and sending email notifications — essentially, I like making sure the stuff behind the scenes runs just as smoothly as the front.`
