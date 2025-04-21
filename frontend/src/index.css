@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Gidole&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Special+Gothic&display=swap');
 
 @import "tailwindcss";
 
@@ -12,10 +13,18 @@
   }
 
 body {
+    font-family: "Special Gothic", sans-serif;
+    background-color: #d4e3fe;
+    color: #7589ce;
+}
+
+/*
+body {
     font-family: "Gidole", sans-serif; 
     background-color: #f3f3f3;
     color: #6d4884;
 }
+*/
 
 @theme {
     --color-blackCustom-50: #f7f8f8;
@@ -58,5 +67,20 @@ body {
     --font-titleCustomFont: "Boldonse", system-ui;
     --font-customTitle: "Fredericka the Great", serif;
     --font-customTitle2: "DM Serif Text", serif;
+
+    --font-pixelify: "Pixelify Sans", sans-serif;
+    --font-regularCustom: "Special Gothic", sans-serif;
+
+    --color-custBlue-200: #d4e3fe;
+    --color-custPink-100: #e5ecfa;
+    --color-custPink-200: #e3bffd;
+    --color-custPurple-100: #d0dbf5;
+    --color-custPurple-200: #c99df5;
+    --color-custPurple-400: #7589ce;
+    --color-custPurple-300: #9dabe7;
+    --color-custWhite-100: #fffeff;
+    --color-custYellow-200: #fede95;
+    --color-custSalmon-200: #ffbfc5;
+    
 }
 

@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import { motion, useAnimation, useScroll, useTransform } from "motion/react";
 
 const projtext1 = "A space exploration website filled with images from the cosmos. View the Astronomy Picture of the Day & Week, alongside a vast collection of images from NASA's database dating back to June 16, 1995. Integrated with NASA's APOD API, updates daily in real time.";
+const proj1text2 = "is a web app that interacts with NASA's Astronomy Picture of the Day (APOD) API to deliver the Astronomy Picture of the Day, a scrollable gallery of the past week, and lets users look up any APOD all the way back to 1995."
+const proj1text3 = "This project is built with React.js, Node.js and MongoDB."
 const projTitle1 = "Space Monki";
 const techs1 = "React - Node.js - MongoDB - API Integration";
 

@@ -12,10 +12,12 @@ import ExpressIcon from "../assets/icons/expressIcon.svg";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 
-const titleText = "Tech I Work With";
+const titleText1 = "Tools I";
+const titleText2 = "Build With";
 
 const TechsComponent = () => {
-    const titleWords = titleText.split(" ");
+    const title1Words = titleText1.split(" ");
+    const title2Words = titleText2.split(" ");
         
         const titleRef = useRef<HTMLDivElement>(null);
     
@@ -31,18 +33,27 @@ const TechsComponent = () => {
     
         const entryY = useTransform(scrollYProgress, [0, 0.2, 0.6, 0.8, 1], [60, 60, 20, 0, -20]);
         const entryScale = useTransform(scrollYProgress, [0, 0.6, 1], [0.9, 1.1, 1]);
+        const text1y = useTransform(scrollYProgress, [0, 0.8, 1], [100, -10, -10]);
+        const text2y = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [100, 100, -10, -10]);
         
   return (
     <div className="h-[80vh] w-full flex flex-col space-y-24 items-center bg-indigoCustom-100"
     ref={titleRef}>
-        <motion.div className="h-1/5 text-6xl text-center flex items-center w-full justify-center">
-            <div>
+        <motion.div className="h-2/5 text-9xl text-center flex flex-col items-center w-full justify-center">
+            <div className="overflow-clip h-[15vh]">
                 <motion.p className="uppercase font-customTitle2"
                 style={{
-                }}>Tech I Work With</motion.p>
+                    y: text1y
+                }}>{titleText1}</motion.p>
+            </div>
+            <div className="overflow-clip h-[15vh]">
+                <motion.p className="uppercase font-customTitle2"
+                style={{
+                    y: text2y
+                }}>{titleText2}</motion.p>
             </div>
         </motion.div>
-        <div className="z-40 h-4/5 w-4/5 p-12 flex flex-row space-y-12 items-center font-semibold">
+        <div className="z-40 h-3/5 w-4/5 p-12 flex flex-row space-y-12 items-center font-semibold">
             <motion.div className="flex flex-1/5 flex-col p-2 space-y-4 items-center"
             initial={{
                 opacity: 0

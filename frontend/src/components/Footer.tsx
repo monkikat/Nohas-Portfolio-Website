@@ -4,7 +4,7 @@ import githubIcon from "../assets/icons/githubIcon.svg";
 
 const Footer = () => {
   return (
-    <footer className="h-[60vh] p-8 pt-[20vh] flex justify-between">
+    <footer className="h-[60vh] p-8 pt-[20vh] flex justify-between bg-indigoCustom-100">
         <div className="w-1/5 flex flex-col justify-end space-y-4">
             <div>
                 <p>Designed & Developed by me :D</p>
