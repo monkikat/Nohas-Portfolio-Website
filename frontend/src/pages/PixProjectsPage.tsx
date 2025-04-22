@@ -4,9 +4,6 @@ import proj2Img from "../assets/2.3.gif";
 import proj4Img from "../assets/3.1.gif";
 import arrowDown from "../assets/icons/arrowDown.svg";
 import { motion, useAnimation, useScroll, useTransform } from "motion/react";
-
-const titleMain = "Projects";
-
 const proj1Title = "Space Monki";
 const proj1text1 = "is a web app that interacts with NASA's Astronomy Picture of the Day (APOD) API to deliver the Astronomy Picture of the Day, a scrollable gallery of the past week, and lets users look up any APOD all the way back to 1995."
 const proj1text2 = "This project is built with React.js, Node.js and MongoDB."
