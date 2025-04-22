@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@cloudflare/vite-plugin": "^1.0.8",
     "@tailwindcss/vite": "^4.0.14",
     "lenis": "^1.2.3",
     "motion": "^12.5.0",
