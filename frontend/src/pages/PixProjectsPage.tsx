@@ -29,7 +29,6 @@ const PixProjectsPage = () => {
     const proj2Animator = useAnimation();
     const proj3Animator = useAnimation();
     const proj4Animator = useAnimation();
-    const titleLetters = titleMain.split("");
 
     const { scrollYProgress: scrollYProgressBg } = useScroll({
         target: bgRef,

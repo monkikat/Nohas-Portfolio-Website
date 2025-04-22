@@ -2,7 +2,7 @@ import PixPortraitCard from "../components/PixPortraitCard"
 import cloud1 from "../assets/cloud1.svg";
 import cloud2 from "../assets/cloud2.svg";
 import PixIntroPage from "./PixIntroPage";
-import { motion, useAnimation, useAnimationControls, useMotionValue, useScroll, useSpring, useTransform, useVelocity } from "motion/react";
+import { motion, useAnimation, useAnimationControls, useScroll, useTransform } from "motion/react";
 import { useEffect, useRef } from "react";
 
 
