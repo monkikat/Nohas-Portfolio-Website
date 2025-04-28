@@ -14,10 +14,10 @@ import { motion } from "motion/react";
 const PixSkillsPage = () => {
 
   return (
-    <div className="h-fit w-[100vw] overflow-clip">
-        <div className='h-fit w-[100vw] flex flex-col justify-between space-x-8 items-center p-8 bg-gradient-to-b from-custYellow-200 via-custSalmon-200 to-custPink-200 lg:flex-row'>
-            <div className="h-fit min-w-0 flex p-8">
-                <div className="h-fit text-custWhite-100 p-16 overflow-y-hidden space-y-8 font-bold text-xs md:text-[2.2vh]">
+    <div className="h-fit w-full overflow-clip">
+        <div className='h-fit w-full flex flex-col justify-between space-x-0 items-center p-0 bg-gradient-to-b from-custYellow-200 via-custSalmon-200 to-custPink-200 lg:flex-row lg:space-x-2'>
+            <div className="h-fit w-full min-w-0 flex p-0">
+                <div className="h-fit text-custWhite-100 p-16 overflow-y-hidden space-y-8 font-normal text-xs md:font-bold md:text-[2.2vh]">
                     <motion.div className="space-y-8"
                     initial={{
                         opacity: 0,
@@ -31,12 +31,12 @@ const PixSkillsPage = () => {
                         duration: 0.8,
                         delay: 0.2
                     }}>
-                        <p className="text-3xl font-pixelify md:text-5xl">So what do I do?</p>
+                        <p className="text-2xl font-pixelify md:text-5xl">So what do I do?</p>
                         <p>I’m a full stack developer with a creative edge, which means I can design, build, and launch digital experiences that not only work well but look and feel great too.</p>
                     </motion.div>
                     <div className="flex space-x-8">
                         <div className="flex flex-col min-w-0 flex-1/2 space-y-8">
-                            <motion.p className="text-3xl font-pixelify md:text-5xl"
+                            <motion.p className="text-2xl font-pixelify md:text-5xl"
                             initial={{
                                 opacity: 0,
                                 y: 20
@@ -82,7 +82,7 @@ const PixSkillsPage = () => {
                         </div>
                         <div className="flex flex-col min-w-0 flex-1/2 justify-between">
                             <div className="flex flex-col space-y-8">
-                                <motion.p className="text-3xl font-pixelify md:text-5xl"
+                                <motion.p className="text-2xl font-pixelify md:text-5xl"
                                 initial={{
                                     opacity: 0,
                                     y: 20
@@ -111,7 +111,7 @@ const PixSkillsPage = () => {
                                     I build custom backend solutions, whether that means setting up dynamic routes, processing form inputs, or linking everything together with clean, well-structured APIs. 
                                     If your site needs to capture user info, sync with a database, or support future scaling — I’ll make it happen, reliably and efficiently.</motion.p>
                             </div>
-                            <motion.div className="bg-custWhite-100 text-custPurple-400 uppercase px-4 py-2 border-2 border-custPurple-300 rounded-2xl text-md font-pixelify w-fit"
+                            <motion.div className="bg-custWhite-100 text-custPurple-400 uppercase px-4 py-2 border-2 border-custPurple-300 rounded-2xl text-md font-pixelify w-fit text-xs md:text-[2.2vh]"
                             initial={{
                                 opacity: 0,
                                 y: 20
@@ -131,8 +131,8 @@ const PixSkillsPage = () => {
                 </div>
             </div>
 
-            <div className="w-fit flex justify-center px-8">
-                <motion.div className="flex flex-col items-center h-fit w-fit space-y-8 bg-gradient-to-bl from-custPink-200 border-2 p-8 border-custPurple-400 rounded-xl shadow-sm shadow-custPurple-400"
+            <div className="w-fit flex justify-center px-8 mt-12 mb-8 lg:mt-0 lg:mb-0">
+                <motion.div className="flex flex-col items-center h-fit w-fit space-y-8 bg-gradient-to-bl px-8 py-8 border-0 rounded-xl shadow-none shadow-custPurple-400 lg:space-y-8 lg:px-8 md:shadow-sm md:from-custPink-200 md:border-2 md:border-custPurple-400"
                 initial={{
                     opacity: 0,
                     x: 100
@@ -146,7 +146,7 @@ const PixSkillsPage = () => {
                     delay: 0.2
                 }}>
                     <p className="font-pixelify uppercase text-2xl font-extrabold lg:text-3xl">Skills</p>
-                    <div className="text-xs flex flex-col space-y-8 bg-custBlue-200 border-2 p-4 border-custPurple-400 rounded-2xl">
+                    <div className="text-xs flex flex-col space-y-4 bg-custBlue-200 border-2 py-8 px-4 border-custPurple-400 rounded-2xl lg:space-y-8 lg:px-8">
                         <div className="flex flex-col space-y-8 space-x-4 lg:flex-row lg:space-y-0">
                             <div className="flex flex-row space-y-0 space-x-8 items-center justify-between lg:flex lg:flex-col lg:space-y-8 lg:space-x-0">
                                 <div className="space-y-2 flex flex-col items-center">
