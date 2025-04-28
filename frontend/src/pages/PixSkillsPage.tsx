@@ -9,19 +9,9 @@ import PhotoshopIcon from "../assets/icons/photoshopIcon.svg";
 import ReactJSIcon from "../assets/icons/reactIcon.svg";
 import NodeJSIcon from "../assets/icons/nodejsIcon.svg";
 import ExpressIcon from "../assets/icons/expressIcon.svg";
-import { motion, useAnimation, useScroll, useTransform } from "motion/react";
-import { useEffect, useRef } from "react";
+import { motion } from "motion/react";
 
 const PixSkillsPage = () => {
-
-    const ref = useRef<HTMLDivElement>(null);
-    const skillsAnimator = useAnimation();
-    const { scrollYProgress } = useScroll({
-        target: ref,
-        offset: ["start end", "end start"]
-    });
-    const y1 = useTransform(scrollYProgress, [0, 1], [100, -100]);
-    const y2 = useTransform(scrollYProgress, [0, 1], [150, 0]);
 
   return (
     <div className="h-fit w-[100vw] overflow-clip">
