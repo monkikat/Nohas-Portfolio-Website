@@ -1,8 +1,8 @@
 const PixNavbar = () => {
     
   return (
-    <header className="flex w-full p-4 text-xs font-pixelify text-custPurple-400 md:text-sm justify-between">
-        <div className='flex flex-col space-y-2 absolute'>
+    <header className="flex flex-col w-full p-4 text-xs font-pixelify text-custPurple-400 md:text-sm justify-between">
+        <div className='flex flex-col space-y-2 absolute right-4 top-10 text-end sm:text-start sm:top-4 sm:left-4'>
             <div>
               <p>Noha Haneen</p>
               <p>Web Developer & Designer</p>
