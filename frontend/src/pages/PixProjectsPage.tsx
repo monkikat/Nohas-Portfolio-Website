@@ -33,13 +33,7 @@ const PixProjectsPage = () => {
         offset: ["start start", "end end"]
     });
 
-    const { scrollYProgress } = useScroll({
-        target: bgRef,
-        offset: ["start end", "end start"]
-    });
-
     const backgroundColor = useTransform( scrollYProgressBg, [0, 0.65, 1], ["#d4e3fe", "#d4e3fe", "#fede95"]);
-    const yTitle = useTransform(scrollYProgress, [0, 0.5, 1], [0, 0, 100]);
 
     useEffect(() => {
         const animateProj1 = scrollYProgressBg.on("change", (latest) => {
