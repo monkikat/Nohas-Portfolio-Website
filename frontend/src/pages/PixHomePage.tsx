@@ -5,7 +5,7 @@ import PixSkillsPage from "./PixSkillsPage"
 
 const PixHomePage = () => {
   return (
-    <div>
+    <div className="overflow-clip">
         <PixLandingPage/>
         <PixProjectsPage/>
         <PixSkillsPage/>
