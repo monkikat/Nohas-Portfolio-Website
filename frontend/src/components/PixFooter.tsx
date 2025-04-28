@@ -13,12 +13,13 @@ const PixFooter = () => {
                 <p>Contact</p>
               </div>
             </div>
-            <div className="flex items-end">
-              <p>Email: nohahaneenprofessional@gmail.com</p>
+            <div className="flex flex-col space-x-0 items-start sm:flex sm:flex-row sm:space-x-2 sm:items-end">
+              <p>Email:</p>
+              <p>nohahaneenprofessional@gmail.com</p>
             </div>
         </div>
         <div className="flex flex-col justify-end w-2/5 space-y-4 lg:w-1/5">
-            <p className="text-nowrap">Designed & Developed by me :)</p>
+            <p className="">Designed & Developed by me :)</p>
             <p>This website is created using React.js. Designs and animations are created primarily using Tailwind CSS & Framer Motion.</p>
         </div>
     </div>
