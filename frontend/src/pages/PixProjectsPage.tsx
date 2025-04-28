@@ -1,24 +1,25 @@
 import { useEffect, useRef } from "react";
 import proj1Img from "../assets/1.3.png";
 import proj2Img from "../assets/2.3.gif";
-import proj4Img from "../assets/3.1.gif";
+import proj4Img from "../assets/comingSoon.png";
+import proj3Img from "../assets/3.1.gif";
 import arrowDown from "../assets/icons/arrowDown.svg";
 import { motion, useAnimation, useScroll, useTransform } from "motion/react";
-const proj1Title = "Space Monki";
-const proj1text1 = "is a web app that interacts with NASA's Astronomy Picture of the Day (APOD) API to deliver the Astronomy Picture of the Day, a scrollable gallery of the past week, and lets users look up any APOD all the way back to 1995."
-const proj1text2 = "This project is built with React.js, Node.js and MongoDB."
+const proj1Title = "NASA Astronomy Image Explorer";
+const proj1text1 = "Space Monki is a web app that interacts with NASA's Astronomy Picture of the Day (APOD) API to deliver the Astronomy Picture of the Day, a scrollable gallery of the past week, and lets users look up any APOD dating all the way back to 1995."
+const proj1text2 = "Key Technologies: React.js, Node.js, REST APIs, TypeScript"
 
-const proj2Title = "Event Timer Web App";
-const proj2text1 = "Space Monki is a web app that interacts with NASA's Astronomy Picture of the Day (APOD) API to deliver the Astronomy Picture of the Day."
-const proj2text2 = "This project is built with React.js, Node.js and MongoDB."
+const proj2Title = "Event Timer/Registration Hub";
+const proj2text1 = "A live timer tool that counts down to any event, allowing users to register via email for timely event updates."
+const proj2text2 = "Key Technologies: React.js, Tailwind CSS, EmailJS"
 
-const proj3Title = "ASPIRE Private School Website";
+const proj4Title = "Real-Time Risk and Toxicity Monitor";
+const proj4text1 = "A web dashboard that tracks toxic behavior and laundering risks in real time. It visualizes hotspots, highlights high-risk users, and monitors community health through live data."
+const proj4text2 = "Coming Soon..."
+
+const proj3Title = "Game Assets & Animations";
 const proj3text1 = "Space Monki is a web app that interacts with NASA's Astronomy Picture of the Day (APOD) API to deliver the Astronomy Picture of the Day, a scrollable gallery of the past week, and lets users look up any APOD all the way back to 1995."
 const proj3text2 = "This project is built with React.js, Node.js and MongoDB."
-
-const proj4Title = "Assets & Animations";
-const proj4text1 = "Space Monki is a web app that interacts with NASA's Astronomy Picture of the Day (APOD) API to deliver the Astronomy Picture of the Day, a scrollable gallery of the past week, and lets users look up any APOD all the way back to 1995."
-const proj4text2 = "This project is built with React.js, Node.js and MongoDB."
 
 const PixProjectsPage = () => {
     const bgRef = useRef<HTMLDivElement>(null);
@@ -111,17 +112,16 @@ const PixProjectsPage = () => {
 
     
   return (
-    <motion.div ref={bgRef} className="h-[500vh]"
+    <motion.div ref={bgRef} className="h-[500vh] mt-20"
     style={{
         backgroundColor
     }}>
         <motion.div className="h-fit flex justify-center items-center w-full pb-12"
         style={{
-            y: yTitle
         }}
         >
-            <p className="uppercase text-8xl font-pixelify text-custWhite-100 ">Projects</p>
-            <p className="uppercase text-8xl font-pixelify absolute -translate-y-2">Projects</p>
+            <p className="uppercase text-[12vh] font-pixelify text-custWhite-100 md:text-[20vh]">Projects</p>
+            <p className="uppercase text-[12vh] font-pixelify absolute -translate-y-2 md:text-[20vh]">Projects</p>
         </motion.div>
         <div className="z-40 h-[100vh] sticky top-0 flex flex-col justify-center items-center p-12">
             <motion.div className="h-fit rounded-3xl border-custPurple-400 border-2 w-5/6 shadow-md shadow-custPurple-300"
@@ -133,23 +133,27 @@ const PixProjectsPage = () => {
             transition={{
                 duration: 0.2
             }}>
-                <div className="h-full w-full flex p-8 space-x-8 rounded-3xl bg-gradient-to-bl from-custPink-200 to-custBlue-200">
-                    <div className="flex w-1/2 flex-col justify-between">
-                        <div className="space-y-8">
-                            <p className="font-pixelify text-2xl">{proj1Title}</p>
+                <div className="h-full w-full flex flex-col space-y-6 p-8 rounded-3xl items-center bg-gradient-to-bl from-custPink-200 to-custBlue-200 md:flex md:flex-row md:space-x-8">
+                    <div className="flex w-full flex-col space-y-6 text-sm justify-between md:w-1/2 md:text-[2.2vh]">
+                        <div className="space-y-4">
+                            <p className="font-pixelify text-3xl">{proj1Title}</p>
                             <p>{proj1text1}</p>
                             <p>{proj1text2}</p>
                         </div>
                         <div className="flex space-x-8">
-                            <div className="bg-custBlue-200 px-2 py-1 border-2 border-custPurple-300 rounded-4xl text-sm"> 
+                            <a href="https://github.com/monkikat/SpaceMonki"
+                            target="_blank" 
+                            className="bg-custBlue-200 px-2 py-1 border-2 border-custPurple-300 rounded-4xl text-sm"> 
                                 View Code 
-                            </div>
-                            <div className="bg-custBlue-200 px-2 py-1 border-2 border-custPurple-300 rounded-4xl text-sm"> 
+                            </a>
+                            <a href="https://spacemonki.netlify.app" 
+                            target="_blank"
+                            className="bg-custBlue-200 px-2 py-1 border-2 border-custPurple-300 rounded-4xl text-sm"> 
                                 Visit Site 
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div className="m-2 w-1/2 bg-custBlue-200 border-2 border-custPurple-300 p-2 rounded-2xl">
+                    <div className="m-2 w-full bg-custBlue-200 border-2 border-custPurple-300 p-2 rounded-2xl md:w-1/2">
                         <img src={proj1Img} className="rounded-xl w-full"/>
                     </div>
                 </div>
@@ -183,23 +187,22 @@ const PixProjectsPage = () => {
             transition={{
                 duration: 0.2
             }}>
-                <div className="h-full w-full flex p-8 space-x-8 rounded-3xl bg-gradient-to-bl from-custPink-200 to-custBlue-200">
-                    <div className="flex w-1/2 flex-col justify-between">
-                        <div className="space-y-8">
-                            <p className="font-pixelify text-2xl">{proj2Title}</p>
+                <div className="h-full w-full flex flex-col space-y-6 p-8 rounded-3xl items-center bg-gradient-to-bl from-custPink-200 to-custBlue-200 md:flex md:flex-row md:space-x-8">
+                    <div className="flex w-full flex-col space-y-6 text-sm justify-between md:w-1/2 md:text-[2.2vh]">
+                        <div className="space-y-4">
+                            <p className="font-pixelify text-3xl">{proj2Title}</p>
                             <p>{proj2text1}</p>
                             <p>{proj2text2}</p>
                         </div>
                         <div className="flex space-x-8">
-                            <div className="bg-custBlue-200 px-2 py-1 border-2 border-custPurple-300 rounded-4xl text-sm"> 
+                            <a href="https://github.com/monkikat/CountdownMonki" 
+                            target="_blank" 
+                            className="bg-custBlue-200 px-2 py-1 border-2 border-custPurple-300 rounded-4xl text-sm"> 
                                 View Code 
-                            </div>
-                            <div className="bg-custBlue-200 px-2 py-1 border-2 border-custPurple-300 rounded-4xl text-sm"> 
-                                Visit Site 
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div className="m-2 w-1/2 flex justify-center bg-custBlue-200 border-2 border-custPurple-300 p-2 rounded-2xl">
+                    <div className="m-2 w-full bg-custBlue-200 border-2 border-custPurple-300 p-2 rounded-2xl md:w-1/2">
                         <img src={proj2Img} className="rounded-xl w-full"/>
                     </div>
                 </div>
@@ -216,24 +219,24 @@ const PixProjectsPage = () => {
             transition={{
                 duration: 0.2
             }}>
-                <div className="h-full w-full flex p-8 space-x-8 rounded-3xl bg-gradient-to-bl from-custPink-200 to-custBlue-200">
-                    <div className="flex w-1/2 flex-col justify-between">
-                        <div className="space-y-8">
-                            <p className="font-pixelify text-2xl">{proj3Title}</p>
+                <div className="h-full w-full flex flex-col space-y-6 p-8 rounded-3xl items-center bg-gradient-to-bl from-custPink-200 to-custBlue-200 md:flex md:flex-row md:space-x-8">
+                    <div className="flex w-full flex-col space-y-6 text-sm justify-between md:w-1/2 md:text-[2.2vh]">
+                        <div className="space-y-4">
+                            <p className="font-pixelify text-3xl">{proj3Title}</p>
                             <p>{proj3text1}</p>
                             <p>{proj3text2}</p>
                         </div>
                         <div className="flex space-x-8">
-                            <div className="bg-custBlue-200 px-2 py-1 border-2 border-custPurple-300 rounded-4xl text-sm"> 
+                            <a 
+                            href="https://github.com/monkikat/2D-Pixel-Game-Assets-and-Animations"
+                            target="_blank"
+                            className="bg-custBlue-200 px-2 py-1 border-2 border-custPurple-300 rounded-4xl text-sm"> 
                                 View Code 
-                            </div>
-                            <div className="bg-custBlue-200 px-2 py-1 border-2 border-custPurple-300 rounded-4xl text-sm"> 
-                                Visit Site 
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div className="m-2 w-1/2 flex justify-center bg-custBlue-200 border-2 border-custPurple-300 p-2 rounded-2xl">
-                        <img src={proj1Img} className="rounded-xl w-full"/>
+                    <div className="m-2 w-full bg-custBlue-200 border-2 border-custPurple-300 p-2 rounded-2xl md:w-1/2">
+                        <img src={proj3Img} className="rounded-xl w-full"/>
                     </div>
                 </div>
             </motion.div>
@@ -249,23 +252,15 @@ const PixProjectsPage = () => {
             transition={{
                 duration: 0.2
             }}>
-                <div className="h-full w-full flex p-8 space-x-8 rounded-3xl bg-gradient-to-bl from-custPink-200 to-custBlue-200">
-                    <div className="flex w-1/2 flex-col justify-between">
-                        <div className="space-y-8">
+                <div className="h-full w-full flex flex-col space-y-6 p-8 rounded-3xl items-center bg-gradient-to-bl from-custPink-200 to-custBlue-200 md:flex md:flex-row md:space-x-8">
+                    <div className="flex w-full flex-col space-y-6 text-sm justify-between md:w-1/2 md:text-[2.2vh]">
+                        <div className="space-y-4">
                             <p className="font-pixelify text-2xl">{proj4Title}</p>
                             <p>{proj4text1}</p>
                             <p>{proj4text2}</p>
                         </div>
-                        <div className="flex space-x-8">
-                            <div className="bg-custBlue-200 px-2 py-1 border-2 border-custPurple-300 rounded-4xl text-sm"> 
-                                View Code 
-                            </div>
-                            <div className="bg-custBlue-200 px-2 py-1 border-2 border-custPurple-300 rounded-4xl text-sm"> 
-                                Visit Site 
-                            </div>
-                        </div>
                     </div>
-                    <div className="m-2 w-1/2 flex justify-center bg-custBlue-200 border-2 border-custPurple-300 p-2 rounded-2xl">
+                    <div className="m-2 w-full bg-custBlue-200 border-2 border-custPurple-300 p-2 rounded-2xl md:w-1/2">
                         <img src={proj4Img} className="rounded-xl w-full"/>
                     </div>
                 </div>

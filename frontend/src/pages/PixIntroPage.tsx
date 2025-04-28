@@ -7,7 +7,7 @@ const introText4 = `If I’m not coding, I’m probably designing, planning a fu
 const PixIntroPage = () => {
   return (
     <div className='h-[100vh] w-full flex justify-center items-center'>
-        <div className='h-fit w-1/2 flex flex-col justify-center space-y-8 bg-custBlue-200 border-2 border-custPurple-300 p-12 rounded-3xl'>
+        <div className='max-h-[100vh] w-5/6 flex flex-col justify-center space-y-8 bg-custBlue-200 border-2 border-custPurple-300 p-12 rounded-3xl text-sm md:w-1/2 md:text-lg'>
             <p>{introText1}</p>
             <p>{introText2}</p>
             <p>{introText3}</p>

@@ -16,7 +16,7 @@ const PixPortraitCard = () => {
         }}
         transition={{
             duration: 0.18,
-            delay: 0.4
+            delay: 0.6
         }}>
             <div className="absolute -translate-x-8">
                 <img src={smileIcon} className="h-16"/>
@@ -24,7 +24,7 @@ const PixPortraitCard = () => {
             <p className="absolute py-3 font-bold text-xl">: )</p>
         </motion.div>
         <div className="bg-custWhite-100 border-2 border-custPurple-300 rounded-full p-2">
-            <img className="h-64 object-cover rounded-full" src={profileImg}/>
+            <img className="h-48 object-cover rounded-full md:h-64" src={profileImg}/>
         </div>
     </div>
   )

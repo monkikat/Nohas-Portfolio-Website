@@ -1,12 +1,25 @@
 import GithubIcon from "../assets/icons/githubIcon.svg";
 import LinkedInIcon from "../assets/icons/linkedinIcon.svg";
 import GmailIcon from "../assets/icons/gmailIcon.svg";
+import { motion } from "motion/react";
 
 const PixContactPage = () => {
   return (
-    <div className="h-[90vh] w-full p-8 flex space-x-8 items-center justify-end bg-gradient-to-b from-custPink-200">
-        <div className="h-1/2 w-1/2 flex items-center justify-center">
-            <div className="h-fit w-fit bg-custBlue-200 border-2 border-custPurple-400 px-8 py-16 rounded-2xl shadow-md shadow-custPurple-400">
+    <div className="h-fit w-full px-8 mb-12 flex flex-col-reverse space-x-0 items-center justify-end bg-gradient-to-b from-custPink-200 lg:flex lg:flex-row lg:space-x-8">
+        <motion.div className="w-1/2 flex items-center justify-center"
+        initial={{
+            opacity: 0,
+            x: -100
+        }}
+        whileInView={{
+            opacity: 1,
+            x: 0
+        }}
+        transition={{
+            duration: 1,
+            delay: 0.2
+        }}>
+            <div className="h-fit w-fit bg-custBlue-200 border-2 border-custPurple-400 px-8 py-16 rounded-2xl shadow-md shadow-custPurple-400 text-xs md:text-[2.2vh]">
                 <form action="https://formsubmit.co/nohahaneenprofessional@gmail.com"
             method="POST"
             className="space-y-2 font-pixelify">
@@ -38,20 +51,24 @@ const PixContactPage = () => {
                     </div>
                 </form>
             </div>
-        </div>
-        <div className="w-1/2 h-full flex flex-col justify-center space-y-8">
-            <div className="text-9xl w-1/2 h-fit flex items-center font-pixelify text-custWhite-100 font-extrabold">
-                <p>Let's Connect</p>
+        </motion.div>
+        <div className="w-full h-[20vh] flex flex-col items-center justify-end py-12 lg:h-[60vh] lg:w-1/2 mt-24 mb-12 lg:mt-0 lg:mb-0 lg:items-start">
+            <div className="text-7xl w-full h-fit flex items-end justify-center font-pixelify text-custWhite-100 font-extrabold uppercase my-12 translate-y-0 lg:text-8xl lg:w-1/2 lg:right-0 lg:-translate-y-16 lg:justify-start lg:my-0">
+                <p className="absolute">Let's Connect</p>
                 <p className="absolute -translate-y-2 bg-gradient-to-b from-custPurple-400 via-custPurple-400 to-custPink-200 text-transparent bg-clip-text inline-block">Let's Connect</p>
             </div>
-            <div className="px-2 flex w-1/3 justify-between text-custWhite-100">
-                <div className="bg-custBlue-200 border-2 border-custPurple-400 rounded-full p-2">
+            <div className="absolute px-2 flex space-x-12 items-end justify-between text-custWhite-100 translate-y-4 scale-85 lg:scale-100 lg:space-x-8">
+                <a href="https://www.linkedin.com/in/noha-haneen/"
+                target="_blank" 
+                className="bg-custBlue-200 border-2 border-custPurple-400 rounded-full h-fit p-2">
                     <img src={LinkedInIcon} className="h-4"/>
-                </div>
-                <div className="bg-custBlue-200 border-2 border-custPurple-400 rounded-full p-2">
+                </a>
+                <a href="https://github.com/monkikat" 
+                target="_blank"
+                className="bg-custBlue-200 border-2 border-custPurple-400 rounded-full h-fit p-2">
                     <img src={GithubIcon} className="h-4"/>
-                </div>
-                <div className="bg-custBlue-200 border-2 border-custPurple-400 rounded-full p-2">
+                </a>
+                <div className="bg-custBlue-200 border-2 border-custPurple-400 rounded-full h-fit p-2">
                     <img src={GmailIcon} className="h-4"/>
                 </div>
             </div>

@@ -119,7 +119,7 @@ const PixLandingPage = () => {
             animate={controls1}
             />
             <div className="absolute inset-0 h-[100vh] w-full bg-[linear-gradient(to_right,#eff5ff60_1.5px,transparent_1.5px),linear-gradient(to_bottom,#eff5ff60_1.5px,transparent_1.5px)] bg-[size:36px_36px]">
-                <div className="relative h-full w-full bg-gradient-to-t from-custBlue-200">
+                <div className="relative h-full w-full bg-gradient-to-t from-custBlue-200 p-12 text-center">
                     <motion.div className="relative flex flex-col z-10 h-full w-full items-center justify-center space-y-8"
                     initial={{
                         opacity: 1
@@ -129,12 +129,12 @@ const PixLandingPage = () => {
                         duration: 0.2
                     }}
                     >
-                        <div className="flex">
-                            <p className="font-pixelify text-[20vh] font-bold text-custWhite-100 uppercase">Noha Haneen</p>
-                            <p className="font-pixelify text-[20vh] font-bold absolute -translate-y-2 uppercase bg-gradient-to-b from-custPurple-400 via-custPurple-400 to-custPink-200 text-transparent bg-clip-text inline-block">Noha Haneen</p>
+                        <div className="flex font-pixelify text-[12vh] font-bold uppercase md:text-[20vh]">
+                            <p className="text-custWhite-100">Noha Haneen</p>
+                            <p className="absolute -translate-y-2 bg-gradient-to-b from-custPurple-400 via-custPurple-400 to-custPink-200 text-transparent bg-clip-text inline-block">Noha Haneen</p>
                         </div>
-                        <p className="font-pixelify text-4xl uppercase">Web Developer & Designer</p>
-                        <div className="bg-custWhite-100 px-4 font-pixelify py-1 border-2 border-custPurple-400 rounded-2xl text-md uppercase"> Contact Me </div>
+                        <p className="font-pixelify text-xl uppercase md:text-4xl">Web Developer & Designer</p>
+                        <div className="scale-75 bg-custWhite-100 px-4 font-pixelify py-1 border-2 border-custPurple-400 rounded-2xl text-md uppercase md:scale-100"> Contact Me </div>
                     </motion.div>
                 </div>
             </div>
