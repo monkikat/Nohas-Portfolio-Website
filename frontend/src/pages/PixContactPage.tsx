@@ -53,7 +53,7 @@ const PixContactPage = () => {
             </div>
         </motion.div>
         <div className="w-full h-[20vh] flex flex-col items-center justify-end py-12 lg:h-[60vh] lg:w-1/2 mt-24 mb-12 lg:mt-0 lg:mb-0 lg:items-start">
-            <div className="text-7xl w-full h-fit flex items-end justify-center font-pixelify text-custWhite-100 font-extrabold uppercase my-12 translate-y-0 lg:text-8xl lg:w-1/2 lg:right-0 lg:-translate-y-16 lg:justify-start lg:my-0">
+            <div className="text-6xl w-full h-fit flex items-end justify-center font-pixelify text-custWhite-100 font-extrabold uppercase my-12 translate-y-0 lg:text-8xl lg:w-1/2 lg:right-0 lg:-translate-y-16 lg:justify-start lg:my-0">
                 <p className="absolute">Let's Connect</p>
                 <p className="absolute -translate-y-2 bg-gradient-to-b from-custPurple-400 via-custPurple-400 to-custPink-200 text-transparent bg-clip-text inline-block">Let's Connect</p>
             </div>
