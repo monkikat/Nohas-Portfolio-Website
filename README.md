@@ -4,12 +4,14 @@ Welcome to the Github repo for my Portfolio Website!
 
 Visit the live portfolio at: [https://www.nohasportfolio.com]
 
+![frontend/src/assets/PortfolioLanding.gif](https://github.com/monkikat/Nohas-Portfolio-Website/blob/main/frontend/src/assets/PortfolioLanding.gif)
+
 ## Built With
 
-- **React** – Component-based UI library
-- **TypeScript** – Typed JavaScript for more robust development
-- **Tailwind CSS** – Utility-first CSS framework for rapid UI development
-- **Framer Motion** – Animation library for smooth transitions and interactions
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion**
 
 ## Features
 
