@@ -2,8 +2,35 @@ import GithubIcon from "../assets/icons/githubIcon.svg";
 import LinkedInIcon from "../assets/icons/linkedinIcon.svg";
 import GmailIcon from "../assets/icons/gmailIcon.svg";
 import { motion } from "motion/react";
+import { useState } from "react";
 
 const PixContactPage = () => {
+  const [messageSent, setMessageSent] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // Prevent default form submission
+    
+    // Show success message
+    setMessageSent(true);
+    
+    // Get form data
+    const formData = new FormData(e.currentTarget);
+    
+    // Submit form data to FormSubmit.co using fetch
+    fetch("https://formsubmit.co/nohahaneenprofessional@gmail.com", {
+      method: "POST",
+      body: formData,
+    });
+    
+    // Clear form fields
+    e.currentTarget.reset();
+    
+    // Hide the message after 4 seconds
+    setTimeout(() => {
+      setMessageSent(false);
+    }, 4000);
+  };
+
   return (
     <div className="h-fit w-full px-8 mb-12 flex flex-col-reverse space-x-0 items-center justify-end bg-gradient-to-b from-custPink-200 lg:flex lg:flex-row lg:space-x-8">
         <motion.div className="w-1/2 flex items-center justify-center"
@@ -20,10 +47,13 @@ const PixContactPage = () => {
             delay: 0.2
         }}>
             <div className="h-fit w-fit bg-custBlue-200 border-2 border-custPurple-400 px-8 py-16 rounded-2xl shadow-md shadow-custPurple-400 text-xs md:text-[2.2vh]">
-                <form action="https://formsubmit.co/nohahaneenprofessional@gmail.com"
-            method="POST"
-            className="space-y-2 font-pixelify">
+                <form 
+                    action="https://formsubmit.co/nohahaneenprofessional@gmail.com"
+                    method="POST"
+                    className="space-y-2 font-pixelify"
+                    onSubmit={handleSubmit}>
                     <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_next" value={window.location.href} />
                     <div className="">
                         <label>Name</label>
                         <input type="text"
@@ -49,6 +79,11 @@ const PixContactPage = () => {
                         <button type="submit"
                         className="hover:cursor-pointer w-full py-2.5 bg-custBlue-200 border-2 border-custPurple-400 rounded-2xl">Send Message</button>
                     </div>
+                    {messageSent && (
+                        <div className="mt-4 py-2 px-4 bg-custPurple-400 text-custWhite-100 rounded-xl text-center animate-pulse">
+                            Message sent successfully!
+                        </div>
+                    )}
                 </form>
             </div>
         </motion.div>
