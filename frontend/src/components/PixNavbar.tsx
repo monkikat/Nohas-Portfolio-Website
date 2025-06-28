@@ -1,4 +1,14 @@
 const PixNavbar = () => {
+    const scrollToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     
   return (
     <header className="flex flex-col w-full p-4 text-xs font-pixelify text-custPurple-400 lg:text-sm justify-between">
@@ -13,11 +23,11 @@ const PixNavbar = () => {
             </div>
         </div>
         <div className='w-full flex justify-end space-x-4 md:space-x-12 md:justify-end'>
-            <p className="hover:cursor-pointer">Home</p>
-            <p  className="hover:cursor-pointer">About</p>
-            <p  className="hover:cursor-pointer">Projects</p>
-            <p  className="hover:cursor-pointer">My Skills</p>
-            <p  className="hover:cursor-pointer">Contact Me</p>
+            <p className="hover:cursor-pointer hover:text-custPurple-300 transition-colors" onClick={scrollToTop}>Home</p>
+            <p className="hover:cursor-pointer hover:text-custPurple-300 transition-colors" onClick={() => scrollToSection('intro')}>About</p>
+            <p className="hover:cursor-pointer hover:text-custPurple-300 transition-colors" onClick={() => scrollToSection('projects')}>Projects</p>
+            <p className="hover:cursor-pointer hover:text-custPurple-300 transition-colors" onClick={() => scrollToSection('skills')}>My Skills</p>
+            <p className="hover:cursor-pointer hover:text-custPurple-300 transition-colors" onClick={() => scrollToSection('contact')}>Contact Me</p>
         </div>
     </header>
   )

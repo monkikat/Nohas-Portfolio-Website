@@ -14,7 +14,7 @@ import { motion } from "motion/react";
 const PixSkillsPage = () => {
 
   return (
-    <div className="h-fit w-full overflow-clip">
+    <div id="skills" className="h-fit w-full overflow-clip">
         <div className='h-fit w-full flex flex-col justify-between space-x-0 items-center p-0 bg-gradient-to-b from-custYellow-200 via-custSalmon-200 to-custPink-200 lg:flex-row lg:space-x-2'>
             <div className="h-fit w-full min-w-0 flex p-0">
                 <div className="h-fit text-custWhite-100 p-16 overflow-y-hidden space-y-8 font-normal text-xs md:font-bold md:text-[2.2vh]">

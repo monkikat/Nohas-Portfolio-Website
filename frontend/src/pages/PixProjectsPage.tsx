@@ -114,7 +114,7 @@ const PixProjectsPage = () => {
 
     
   return (
-    <motion.div ref={bgRef} className="h-[500vh] mt-4 lg:mt-20"
+    <motion.div id="projects" ref={bgRef} className="h-[500vh] mt-4 lg:mt-20"
     style={{
         backgroundColor
     }}>

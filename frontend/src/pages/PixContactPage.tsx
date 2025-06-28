@@ -32,7 +32,7 @@ const PixContactPage = () => {
   };
 
   return (
-    <div className="h-fit w-full px-8 mb-12 flex flex-col-reverse space-x-0 items-center justify-end bg-gradient-to-b from-custPink-200 lg:flex lg:flex-row lg:space-x-8">
+    <div id="contact" className="h-fit w-full px-8 mb-12 flex flex-col-reverse space-x-0 items-center justify-end bg-gradient-to-b from-custPink-200 lg:flex lg:flex-row lg:space-x-8">
         <motion.div className="w-1/2 flex items-center justify-center"
         initial={{
             opacity: 0,
