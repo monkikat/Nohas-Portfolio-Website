@@ -46,7 +46,7 @@ const PixContactPage = () => {
             duration: 1,
             delay: 0.2
         }}>
-            <div className="h-fit w-fit bg-custBlue-200 border-2 border-custPurple-400 px-8 py-16 rounded-2xl shadow-md shadow-custPurple-400 text-xs md:text-[2.2vh]">
+            <div className="h-fit w-3/4 bg-custBlue-200 border-2 border-custPurple-400 px-8 py-16 rounded-2xl shadow-md shadow-custPurple-400 text-xs md:text-[2.2vh]">
                 <form 
                     action="https://formsubmit.co/nohahaneenprofessional@gmail.com"
                     method="POST"
@@ -59,21 +59,21 @@ const PixContactPage = () => {
                         <input type="text"
                         name="name"
                         required 
-                        className="border-2 border-custPurple-300 rounded-xl ml-4 px-4 py-1"/>            
+                        className="border-2 w-3/4 border-custPurple-300 rounded-xl ml-4 px-4 py-1"/>            
                     </div>
                     <div className="">
                         <label>Email</label>
                         <input type="email"
                         name="email"
                         required 
-                        className="border-2 border-custPurple-300 rounded-xl ml-4 px-4 py-1"/>
+                        className="border-2 w-3/4 border-custPurple-300 rounded-xl ml-4 px-4 py-1"/>
                     </div>
                     <div className="">
                         <label>Message</label>
                         <textarea name="message"
                         required
                         rows={4} 
-                        className="border-2 border-custPurple-300 rounded-xl ml-4 px-4 py-1"/>
+                        className="border-2 w-3/4 border-custPurple-300 rounded-xl ml-4 px-4 py-1"/>
                         </div>
                     <div className="flex w-full items-center justify-center pt-10">
                         <button type="submit"
@@ -88,11 +88,11 @@ const PixContactPage = () => {
             </div>
         </motion.div>
         <div className="w-full h-[20vh] flex flex-col items-center justify-end py-12 lg:h-[60vh] lg:w-1/2 mt-24 mb-12 lg:mt-0 lg:mb-0 lg:items-start">
-            <div className="text-6xl w-full h-fit flex items-end justify-center font-pixelify text-custWhite-100 font-extrabold uppercase my-12 translate-y-0 lg:text-8xl lg:w-1/2 lg:right-0 lg:-translate-y-16 lg:justify-start lg:my-0">
+            <div className="text-6xl w-full h-fit flex items-end text-center font-pixelify text-custWhite-100 font-extrabold uppercase my-12 translate-y-0 lg:text-8xl lg:w-1/2 lg:-translate-y-16 lg:translate-x-20 lg:justify-start lg:my-0">
                 <p className="absolute">Let's Connect</p>
                 <p className="absolute -translate-y-2 bg-gradient-to-b from-custPurple-400 via-custPurple-400 to-custPink-200 text-transparent bg-clip-text inline-block">Let's Connect</p>
             </div>
-            <div className="absolute px-2 flex space-x-12 items-end justify-between text-custWhite-100 translate-y-4 scale-85 lg:scale-100 lg:space-x-8">
+            <div className="absolute px-2 right-60 flex space-x-12 text-custWhite-100 translate-y-4 scale-85 lg:scale-100 lg:space-x-8">
                 <a href="https://www.linkedin.com/in/noha-haneen/"
                 target="_blank" 
                 className="bg-custBlue-200 border-2 border-custPurple-400 rounded-full h-fit p-2">
