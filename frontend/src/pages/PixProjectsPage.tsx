@@ -28,6 +28,13 @@ const PixProjectsPage = () => {
     const proj3Animator = useAnimation();
     const proj4Animator = useAnimation();
 
+    const scrollToSkills = () => {
+        const skillsElement = document.getElementById('skills');
+        if (skillsElement) {
+            skillsElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     const { scrollYProgress: scrollYProgressBg } = useScroll({
         target: bgRef,
         offset: ["start start", "end end"]
@@ -167,8 +174,11 @@ const PixProjectsPage = () => {
             transition={{
                 delay: 0.8
             }}>
-                <div className="bg-custWhite-100 border-2 flex items-center justify-center font-bold space-x-1 h-fit w-fit px-4 py-1 rounded-2xl border-custPurple-400 text-lg uppercase font-pixelify animate-bounce">
-                    <p className="">
+                <div 
+                    className="bg-custWhite-100 border-2 flex items-center justify-center font-bold space-x-1 h-fit w-fit px-4 py-1 rounded-2xl border-custPurple-400 text-lg uppercase font-pixelify animate-bounce hover:cursor-pointer hover:bg-custBlue-100 transition-colors"
+                    onClick={scrollToSkills}
+                >
+                    <p>
                         Skip
                     </p>
                     <img src={arrowDown} className="h-4.5"/>
