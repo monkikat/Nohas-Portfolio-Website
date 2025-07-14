@@ -1,21 +1,21 @@
 import { useEffect, useRef } from "react";
-import proj1Img from "../assets/1.3.png";
+import proj4Img from "../assets/1.3.png";
 import proj3Img from "../assets/2.3.gif";
-import proj4Img from "../assets/CustAvatarGif.gif";
+import proj1Img from "../assets/teaLP.png";
 import proj2Img from "../assets/3.1.gif";
 import arrowDown from "../assets/icons/arrowDown.svg";
 import { motion, useAnimation, useScroll, useTransform } from "motion/react";
-const proj1Title = "NASA Astronomy Image Explorer";
-const proj1text1 = "Space Monki is a web app that interacts with NASA's Astronomy Picture of the Day (APOD) API to deliver the Astronomy Picture of the Day, a scrollable gallery of the past week, and lets users look up any APOD dating all the way back to 1995."
-const proj1text2 = "Key Technologies: React.js, Node.js, REST APIs, TypeScript"
+const proj4Title = "NASA Astronomy Image Explorer";
+const proj4text1 = "Space Monki is a web app that interacts with NASA's Astronomy Picture of the Day (APOD) API to deliver the Astronomy Picture of the Day, a scrollable gallery of the past week, and lets users look up any APOD dating all the way back to 1995."
+const proj4text2 = "Key Technologies: React.js, Node.js, REST APIs, TypeScript"
 
 const proj3Title = "Event Timer & Registration Hub";
 const proj3text1 = "A live timer tool that counts down to any event, allowing users to register via email for timely event updates."
 const proj3text2 = "Key Technologies: React.js, Tailwind CSS, EmailJS"
 
-const proj4Title = "Avatar Customizer";
-const proj4text1 = "A stop motion themed web game that lets users customize an avatar by choosing different clothing from a dynamic asset menu. The app updates the avatar in real-time as users make their selections.";
-const proj4text2 = "This project is built with React.js, TypeScript, Tailwind CSS, and Framer Motion.";
+const proj1Title = "TeaGround : A WooCommerce online tea store";
+const proj1text1 = "A mood-based tea shop that lets users browse blends by flavor, mood, or price, with a custom checkout and search experience.";
+const proj1text2 = "Key Technologies: WordPress, PHP, JavaScript";
 
 const proj2Title = "Interactive Event Calendar";
 const proj2text1 = "An interactive calendar app that allows users to select any date, discover local events happening nearby, and explore upcoming activities.";
@@ -148,12 +148,10 @@ const PixProjectsPage = () => {
                         </div>
                         <div className="flex space-x-8 text-xs sm:text-sm">
                             <button 
-                            onClick={() => window.open("https://github.com/monkikat/SpaceMonki", "_blank")}
                             className="bg-custBlue-200 px-2 py-1 border-2 border-custPurple-300 rounded-4xl cursor-pointer hover:bg-custBlue-300 transition-colors"> 
                                 View Code 
                             </button>
                             <button 
-                            onClick={() => window.open("https://spacemonki.netlify.app", "_blank")}
                             className="bg-custBlue-200 px-2 py-1 border-2 border-custPurple-300 rounded-4xl cursor-pointer hover:bg-custBlue-300 transition-colors"> 
                                 Visit Site 
                             </button>
