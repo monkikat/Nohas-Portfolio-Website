@@ -14,6 +14,10 @@ Visit the live portfolio at: [https://www.nohasportfolio.com]
 - **Tailwind CSS**
 - **Framer Motion**
 
+## Deploed On
+
+**Vercel**
+
 ## Features
 
 - Fully responsive and mobile-friendly design
