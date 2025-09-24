@@ -14,7 +14,7 @@ Visit the live portfolio at: [https://www.nohasportfolio.com]
 - **Tailwind CSS**
 - **Framer Motion**
 
-## Deploed On
+## Deployed On
 
 **Vercel**
 
