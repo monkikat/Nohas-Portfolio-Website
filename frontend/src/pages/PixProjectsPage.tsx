@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import proj4Img from "../assets/1.3.png";
 import proj3Img from "../assets/2.3.gif";
-import proj1Img from "../assets/teaLP.png";
+import proj1Img from "../assets/ocr_chatbot_demo.gif";
 import proj2Img from "../assets/3.1.gif";
 import arrowDown from "../assets/icons/arrowDown.svg";
 import { motion, useScroll, useTransform } from "motion/react";
